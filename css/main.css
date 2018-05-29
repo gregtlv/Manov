@@ -75,7 +75,7 @@ body, p, a, nav, ul, li {
   position: absolute;
   left: 0;
   top: 0;
-  font-size: 3em; }
+  font-size: 3.5vw; }
 
 .header__nav__list {
   display: none; }
@@ -155,6 +155,9 @@ body, p, a, nav, ul, li {
     margin-top: 20px; }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .header__nav {
+    font-size: 10vw; }
+
   .parallax-banner {
     height: 15%; }
 

@@ -91,7 +91,7 @@ body, p, a, nav, ul, li {
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 3em;
+    font-size: 3.5vw;
   }
 
   .header__nav__list {
@@ -204,12 +204,19 @@ body, p, a, nav, ul, li {
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
   }
+
+  .header__nav {
+    font-size: 10vw;
+  }
+
   .parallax-banner {
     height: 15%;
   }
+
   .main__about {
     flex-direction: column;
   }
+
   .main__about__img {
     width: 80%;
   }
