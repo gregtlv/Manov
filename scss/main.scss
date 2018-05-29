@@ -204,6 +204,9 @@ body, p, a, nav, ul, li {
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
   }
+  .parallax-banner {
+    height: 15%;
+  }
   .main__about {
     flex-direction: column;
   }

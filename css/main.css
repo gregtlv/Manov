@@ -155,6 +155,9 @@ body, p, a, nav, ul, li {
     margin-top: 20px; }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .parallax-banner {
+    height: 15%; }
+
   .main__about {
     flex-direction: column; }
 
