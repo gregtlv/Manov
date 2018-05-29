@@ -1,0 +1,204 @@
+// Hi! My name is Gregory Manov,
+// and here my SCSS Code
+// 05/29/2018 still in Moscow, but must be Tel-Aviv..
+// In September need to return to Tel-Aviv city.
+// For my Margaret..
+// Miss her
+
+// Fonts
+
+@mixin reset-nav-materialize{color:inherit;height:auto;min-height:0;max-height:none;width:100%;min-width:0;max-width:none;background-color:transparent;line-height:normal;box-shadow:none;a{color:inherit;} i, i.material-icons{display:inline-block;font-size:inherit;height:auto;line-height:1;} ul{margin:0;li{transition:none;float:none;padding:0;&.active{background-color:transparent;} } a{display:inline-block;transition:none;font-size:inherit;color:inherit;padding:0;cursor:pointer;&:hover{background-color:transparent;} } }}
+
+@font-face {
+  src: url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
+  font-family: "FontAwesome";
+}
+
+@font-face {
+  src: url(https://fonts.googleapis.com/css?family=Roboto);
+  font-family: "Roboto", sans-serif;
+}
+
+// mixins
+
+@mixin margins {
+  margin: 0 auto;
+}
+
+@mixin title {
+  padding: 1em;
+  font-size: 1.2em;
+  font-family: $primary-font;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// #########
+
+// Variables
+
+$primary-color: #0d0e09;
+$secondary-color: #1e0d1c;
+$footer-color: #fdfdfd;
+$padding-title: 2em 0 2em 0;
+
+$primary-font: "Roboto", sans-serif;
+// $secondary-font:
+
+body, p, a, nav, ul, li {
+  color: $primary-color;
+}
+
+.main__portfolio__title,
+.header__top__title,
+.header__bottom__title,
+.header__bottom__description,
+.main__about__title {
+  @include title();
+}
+
+// Header
+.header {
+  .container {
+    position: relative;
+  }
+  margin-top: 35px;
+  position: relative;
+  color: $primary-color;
+  nav {
+    @include reset-nav-materialize;
+  }
+  .header__top__title {
+    text-align: center;
+    font-size: 1.1em; // zz
+  }
+  .header__bottom__title {
+    font-size: 1.7em; // zz
+    font-weight: 300;
+    padding-bottom: 0px;
+  }
+
+  .header__bottom__description {
+    padding-top: 0.8em;
+    font-size: 1.2em; // zz
+  }
+}
+
+// Navigation
+
+  .header__nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 3em;
+  }
+
+  .header__nav__list {
+    display: none;
+  }
+
+// End of Header
+
+// Main
+
+  // Banner
+  .parallax-banner {
+    width: 100%;
+    height: 30%;
+    background-color: $secondary-color;
+    background-image: url(../img/asteroids.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    content: 'sss';
+  }
+
+
+
+.main__portfolio__title {
+  padding: $padding-title;
+}
+.main__portfolio {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 3em;
+  .main__portfolio__item {
+    width: 30%;
+    padding-bottom: 3%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+}
+// End Portfolio
+
+
+// end of main
+
+
+//Footer
+
+.footer {
+  padding-top: 1.5em;
+  .main__about__title {
+    margin: 0;
+    @include title;
+  }
+  color: $footer-color;
+  width: 100%;
+  background-color: #472843;
+}
+
+.main__about {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: $padding-title;
+
+}
+
+.main__about__img {
+  border: 4px solid rgba(0,0,0, 0.1);
+  border-radius: 50%;
+  width: 30%;
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+
+.main__about__side {
+  padding-left: 10%;
+  width: 80%;
+
+}
+
+.main_about__text {
+  font-family: $primary-font;
+  font-weight: 100;
+  color: #f0f0f0;
+  font-style: italic;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+//form
+
+
+.hello-form {
+  width: 50%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .main__about {
+    flex-direction: column;
+  }
+  .main__about__img,
+  .main__about__side {
+    width: 90%;
+  }
+}
