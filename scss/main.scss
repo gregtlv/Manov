@@ -143,13 +143,14 @@ body, p, a, nav, ul, li {
 
 .footer {
   padding-top: 1.5em;
+  padding-bottom: 50px;
   .main__about__title {
     margin: 0;
     @include title;
   }
   color: $footer-color;
   width: 100%;
-  background-color: #472843;
+  background-color: #3a979c;
 }
 
 .main__about {
@@ -179,6 +180,7 @@ body, p, a, nav, ul, li {
 }
 
 .main_about__text {
+  padding-top: 0px;
   font-family: $primary-font;
   font-weight: 100;
   color: #f0f0f0;
@@ -192,13 +194,29 @@ body, p, a, nav, ul, li {
 
 .hello-form {
   width: 50%;
+  display: block;
+  button {
+    background-color: #8587b6;
+    margin-top: 20px;
+  }
 }
+
 @media (min-width: 320px) and (max-width: 480px) {
+  .container {
+  }
   .main__about {
     flex-direction: column;
   }
-  .main__about__img,
+  .main__about__img {
+    width: 80%;
+  }
+
   .main__about__side {
-    width: 90%;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .main_about__text {
+    margin-top: 30px;
   }
 }
