@@ -156,7 +156,8 @@ body, p, a, nav, ul, li {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .header__nav {
-    font-size: 10vw; }
+    font-size: 10vw;
+    opacity: 0.1; }
 
   .parallax-banner {
     height: 15%; }
