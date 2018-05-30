@@ -5,6 +5,10 @@
 // For my Margaret..
 // Miss her
 
+// Animate
+
+@import "./animate.css";
+
 // Fonts
 
 @mixin reset-nav-materialize{color:inherit;height:auto;min-height:0;max-height:none;width:100%;min-width:0;max-width:none;background-color:transparent;line-height:normal;box-shadow:none;a{color:inherit;} i, i.material-icons{display:inline-block;font-size:inherit;height:auto;line-height:1;} ul{margin:0;li{transition:none;float:none;padding:0;&.active{background-color:transparent;} } a{display:inline-block;transition:none;font-size:inherit;color:inherit;padding:0;cursor:pointer;&:hover{background-color:transparent;} } }}
@@ -77,10 +81,13 @@ body, p, a, nav, ul, li {
     font-size: 1.7em; // zz
     font-weight: 300;
     padding-bottom: 0px;
+    &:hover {
+      animation: tada 1.5s 3;
+    }
   }
 
   .header__bottom__description {
-    padding-top: 0.8em;
+    padding-top: 0;
     font-size: 1.2em; // zz
   }
 }
@@ -92,6 +99,7 @@ body, p, a, nav, ul, li {
     left: 0;
     top: 0;
     font-size: 3.5vw;
+    display: none;
   }
 
   .header__nav__list {
@@ -130,6 +138,9 @@ body, p, a, nav, ul, li {
     img {
       width: 100%;
     }
+    &:hover {
+      animation: pulse 1.5s 1;
+    }
   }
 
 }
@@ -167,6 +178,9 @@ body, p, a, nav, ul, li {
   border: 4px solid rgba(0,0,0, 0.1);
   border-radius: 50%;
   width: 30%;
+  &:hover {
+    animation: bounce 1s 3;
+  }
   img {
     width: 100%;
     border-radius: 50%;
@@ -212,6 +226,18 @@ body, p, a, nav, ul, li {
 
   .parallax-banner {
     height: 15%;
+  }
+
+// portfolio
+
+  .main__portfolio {
+
+    .main__portfolio__item {
+      width: 100%;
+    }
+    .main__portfolio__item:nth-of-type(1n+4) {
+      display: none;
+    }
   }
 
   .main__about {
