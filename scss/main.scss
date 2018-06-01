@@ -8,21 +8,21 @@
 // Animate
 
 @import "./animate.css";
+// @import "./fontawesome-all.css";
 
 // Fonts
 
 @mixin reset-nav-materialize{color:inherit;height:auto;min-height:0;max-height:none;width:100%;min-width:0;max-width:none;background-color:transparent;line-height:normal;box-shadow:none;a{color:inherit;} i, i.material-icons{display:inline-block;font-size:inherit;height:auto;line-height:1;} ul{margin:0;li{transition:none;float:none;padding:0;&.active{background-color:transparent;} } a{display:inline-block;transition:none;font-size:inherit;color:inherit;padding:0;cursor:pointer;&:hover{background-color:transparent;} } }}
 
 @font-face {
-  src: url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
-  font-family: "FontAwesome";
-}
-
-@font-face {
   src: url(https://fonts.googleapis.com/css?family=Roboto);
   font-family: "Roboto", sans-serif;
 }
 
+@font-face {
+  src: url(./fa-brands-400.woff);
+  font-family: "fa-brands-400";
+}
 // mixins
 
 @mixin margins {
@@ -118,7 +118,7 @@ body, p, a, nav, ul, li {
     background-image: url(../img/asteroids.jpg);
     background-size: contain;
     background-attachment: fixed;
-    content: 'sss';
+    content: 'manov';
   }
 
 
@@ -133,17 +133,48 @@ body, p, a, nav, ul, li {
   margin-bottom: 3em;
   .main__portfolio__item {
     width: 30%;
-    padding-bottom: 3%;
+    margin-bottom: 3%;
+    position: relative;
 
     img {
       width: 100%;
     }
-    &:hover {
-      animation: pulse 1.5s 1;
-    }
   }
+  .main__portfolio__item::before {
+      position: absolute;
+
+      display: flex; // Попробовать заменить
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+
+      width: 100%;
+      height: 25%;
+
+      transition: opacity 0.6s;
+      opacity: 0;
+
+      left: 0;
+      bottom: 0;
+
+
+      background-color: rgba(0,0,0, 0.5);
+      z-index: 1;
+      font-family: 'fa-brands-400';
+      font-size: 2.4vw;
+
+      color: #fdfdfd;
+      content: "\f13b   \f38b   \f411   \f41d   \f3b8";
+      white-space: pre;
+
+    }
+    .main__portfolio__item:hover::before {
+      opacity: 1;
+
+    }
 
 }
+
 // End Portfolio
 
 
@@ -234,6 +265,10 @@ body, p, a, nav, ul, li {
 
     .main__portfolio__item {
       width: 100%;
+    }
+    .main__portfolio__item::before {
+      font-size: 30px;
+      display: none;
     }
     .main__portfolio__item:nth-of-type(1n+4) {
       display: none;

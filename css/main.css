@@ -1,10 +1,10 @@
 @import url(./animate.css);
 @font-face {
-  src: url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
-  font-family: "FontAwesome"; }
-@font-face {
   src: url(https://fonts.googleapis.com/css?family=Roboto);
   font-family: "Roboto", sans-serif; }
+@font-face {
+  src: url(./fa-brands-400.woff);
+  font-family: "fa-brands-400"; }
 body, p, a, nav, ul, li {
   color: #0d0e09; }
 
@@ -91,7 +91,7 @@ body, p, a, nav, ul, li {
   background-image: url(../img/asteroids.jpg);
   background-size: contain;
   background-attachment: fixed;
-  content: 'sss'; }
+  content: 'manov'; }
 
 .main__portfolio__title {
   padding: 2em 0 2em 0; }
@@ -103,11 +103,31 @@ body, p, a, nav, ul, li {
   margin-bottom: 3em; }
   .main__portfolio .main__portfolio__item {
     width: 30%;
-    padding-bottom: 3%; }
+    margin-bottom: 3%;
+    position: relative; }
     .main__portfolio .main__portfolio__item img {
       width: 100%; }
-    .main__portfolio .main__portfolio__item:hover {
-      animation: pulse 1.5s 1; }
+  .main__portfolio .main__portfolio__item::before {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 100%;
+    height: 25%;
+    transition: opacity 0.6s;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    font-family: 'fa-brands-400';
+    font-size: 2.4vw;
+    color: #fdfdfd;
+    content: "\f13b   \f38b   \f411   \f41d   \f3b8";
+    white-space: pre; }
+  .main__portfolio .main__portfolio__item:hover::before {
+    opacity: 1; }
 
 .footer {
   padding-top: 1.5em;
@@ -172,6 +192,9 @@ body, p, a, nav, ul, li {
 
   .main__portfolio .main__portfolio__item {
     width: 100%; }
+  .main__portfolio .main__portfolio__item::before {
+    font-size: 30px;
+    display: none; }
   .main__portfolio .main__portfolio__item:nth-of-type(1n+4) {
     display: none; }
 
