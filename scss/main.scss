@@ -129,7 +129,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   padding: $padding-title;
 }
 .main__portfolio {
-  display: flex;
+  display: flex; // flex
+  opacity: 1;
+
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 3em;
@@ -142,6 +144,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
     display: flex;
     // flex-direction: row-reverse;
+    border-radius: 3px;
+
+
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
 
     img {
       width: 100%;
@@ -162,7 +168,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
       text-align: right;
       color: #fdfdfd;
-      font-size: 30px;
+      font-size: 3vw;
       padding: 5px;
 
       transition: opacity 0.6s;
@@ -228,13 +234,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .main__about {
-  margin: 0 auto;
+  // margin: 0 auto;
+  // margin-left: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   padding: $padding-title;
-
 }
 
 .main__about__img {
@@ -252,7 +258,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .main__about__side {
   padding-left: 10%;
-  width: 80%;
+  // width: 80%;
 
 }
 
@@ -298,14 +304,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     .main__portfolio__item {
       width: 100%;
     }
-    .main__portfolio__item::before {
-      font-size: 30px;
+    .main__portfolio__item::before,
+    .portfolio__technics__list i {
       display: none;
     }
     .main__portfolio__item:nth-of-type(1n+4) {
       display: none;
     }
   }
+
+
 
   .main__about {
     flex-direction: column;

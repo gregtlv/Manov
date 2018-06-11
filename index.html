@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Front-End Developer - Gregory Manov</title>
+  <title>Позитивная Вёрстка</title>
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/normalize.css">
@@ -17,6 +17,8 @@
     integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
     crossorigin="anonymous"></script>
   <script src="./js/contacts.js"></script>
+  <script src="./js/portfolio.js"></script>
+
 
 </head>
 <body>
@@ -60,87 +62,114 @@
       <!-- PORTFOLIO -->
       <h4 class="main__portfolio__title">Portfolio</h4>
 
-      <section class="main__portfolio">
+      <section id="mainPortfolio" class="main__portfolio">
 
         <!--  1 -->
-        <div id="work_1" class="main__portfolio__item">
-          <img src="./img/portfolio/1.jpg" alt="Portfolio">
-          <div class="portfolio__technics__list">
-            <i class="fab fa-php"></i>
-            <i class="fab fa-js"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-html5"></i>
+        <a href="#" class="main__portfolio__item" onclick="showWork(evвent);">
+          <div id="work_1" class="">
+            <img src="./img/portfolio/1.jpg" alt="Portfolio">
+            <div class="portfolio__technics__list">
+              <i class="fab fa-php"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-html5"></i>
+            </div>
           </div>
-        </div>
+        </a>
 
         <!--  2 -->
-        <div id="work_2" class="main__portfolio__item">
-          <img src="./img/portfolio/2.jpg" alt="Portfolio">
-          <div class="portfolio__technics__list">
-            <i class="fab fa-wordpress"></i>
-            <i class="fab fa-js"></i>
-            <i class="fab fa-sass"></i>
-            <!-- <i class="fab fa-css3-alt"></i> -->
-            <i class="fab fa-html5"></i>
+        <a href="" class="main__portfolio__item">
+          <div id="work_2">
+            <img src="./img/portfolio/2.jpg" alt="Portfolio">
+            <div class="portfolio__technics__list">
+              <i class="fab fa-wordpress"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-sass"></i>
+              <!-- <i class="fab fa-css3-alt"></i> -->
+              <i class="fab fa-html5"></i>
+            </div>
           </div>
-        </div>
+        </a>
+
         <!-- 3 -->
-        <div id="work_3" class="main__portfolio__item">
-          <img src="./img/portfolio/3.jpg" alt="Portfolio">
-          <div class="portfolio__technics__list">
-            <i class="fab fa-js"></i>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
+        <a href="" class="main__portfolio__item">
+
+          <div id="work_3">
+            <img src="./img/portfolio/3.jpg" alt="Portfolio">
+            <div class="portfolio__technics__list">
+              <i class="fab fa-js"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+            </div>
           </div>
-        </div>
+
+        </a>
         <!--  1 -->
-        <div id="work_4"class="main__portfolio__item">
-          <img src="./img/portfolio/2.jpg" alt="Portfolio">
-          <div class="portfolio__technics__list">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
+        <!-- <a href="" class="main__portfolio__item">
+
+          <div id="work_4">
+            <img src="./img/portfolio/2.jpg" alt="Portfolio">
+            <div class="portfolio__technics__list">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+            </div>
           </div>
-        </div>
+        </a> -->
+
         <!--  2 -->
-        <div id="work_5"class="main__portfolio__item">
-          <img src="./img/portfolio/3.jpg" alt="Portfolio">
-          <div class="portfolio__technics__list">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
+        <!-- <a href="" class="main__portfolio__item">
+          <div id="work_5">
+            <img src="./img/portfolio/3.jpg" alt="Portfolio">
+            <div class="portfolio__technics__list">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+            </div>
           </div>
-        </div>
+        </a> -->
+
         <!-- 3 -->
-        <div id="work_6"class="main__portfolio__item">
-          <img src="./img/portfolio/1.jpg" alt="Portfolio">
-          <div class="portfolio__technics__list">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
+        <!-- <a href="" class="main__portfolio__item">
+          <div id="work_6">
+            <img src="./img/portfolio/1.jpg" alt="Portfolio">
+            <div class="portfolio__technics__list">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+            </div>
           </div>
-        </div>
+        </a> -->
+
         <!--  1 -->
-        <div id="work_7"class="main__portfolio__item">
-          <img src="./img/portfolio/1.jpg" alt="Portfolio">
-          <div class="portfolio__technics__list">
-            <i class="fab portfolio__technics fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
+        <!-- <a href="" class="main__portfolio__item">
+          <div id="work_7">
+            <img src="./img/portfolio/1.jpg" alt="Portfolio">
+            <div class="portfolio__technics__list">
+              <i class="fab portfolio__technics fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+            </div>
           </div>
-        </div>
+        </a> -->
+
         <!--  2 -->
-        <div id="work_8"class="main__portfolio__item">
-          <img src="./img/portfolio/2.jpg" alt="Portfolio">
-          <div class="portfolio__technics__list">
-            <i class="fab portfolio__technics fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
+        <!-- <a href="" class="main__portfolio__item">
+          <div id="work_8">
+            <img src="./img/portfolio/2.jpg" alt="Portfolio">
+            <div class="portfolio__technics__list">
+              <i class="fab portfolio__technics fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+            </div>
           </div>
-        </div>
+        </a> -->
+
         <!-- 3 -->
-        <div id="work_9"class="main__portfolio__item">
-          <img src="./img/portfolio/3.jpg" alt="Portfolio">
-          <div class="portfolio__technics__list">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
+        <!-- <a href="" class="main__portfolio__item">
+          <div id="work_9">
+            <img src="./img/portfolio/3.jpg" alt="Portfolio">
+            <div class="portfolio__technics__list">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+            </div>
           </div>
-        </div>
+        </a> -->
 
 
       </section>
@@ -165,8 +194,8 @@
         </div>
 
         <div class="main__about__side">
-          <p class="main_about__text">Hi! I am Gregory and yes I am Front-End Developer.
-                                      Nice to meet you to! <br /> Send me a message!</p>
+          <p class="main_about__text">Hi my name is Gregory. <br />
+                                      I'm front-end developer.</p>
         </div>
       </div>
 
@@ -189,7 +218,6 @@
 
 <!-- Main Script -->
 <script src="./js/main.js"></script>
-
 
 <script src="http://127.0.0.1:35729/livereload.js?ext=Firefox&amp;extver=20.3.0"></script>
 </body>
