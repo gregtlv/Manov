@@ -103,6 +103,14 @@ body, p, a, nav, ul, li {
   background-attachment: fixed;
   content: 'manov'; }
 
+.hr-line {
+  margin: 30px auto;
+  width: 50px;
+  border: none;
+  background-color: #000;
+  color: #000;
+  height: 1.5px; }
+
 .main__portfolio__title {
   padding: 2em 0 2em 0; }
 
@@ -190,12 +198,16 @@ body, p, a, nav, ul, li {
   margin-bottom: 10px; }
 
 .main__contacts__right p {
+  margin-top: 10px;
+  font-size: 1.5em;
   text-align: justify; }
 
 .main__contacts__left {
   flex-basis: 45%;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-top: 0px;
+  margin-bottom: 0px; }
 
 input, textarea {
   transition: all 0.5s; }
@@ -231,45 +243,9 @@ textarea:focus::placeholder {
   padding-top: 1.5em;
   padding-bottom: 50px;
   color: #fdfdfd;
+  text-align: center;
   width: 100%;
   background-color: #7d7d7d; }
-  .footer .main__about__title {
-    margin: 0;
-    padding: 1em;
-    font-size: 1.3em;
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    text-align: center;
-    text-transform: uppercase; }
-
-.main__about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding: 2em 0 2em 0; }
-
-.main__about__img {
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  width: 30%; }
-  .main__about__img:hover {
-    animation: bounce 1s 3; }
-  .main__about__img img {
-    width: 100%;
-    border-radius: 50%; }
-
-.main__about__side {
-  padding-left: 10%; }
-
-.main_about__text {
-  padding-top: 0px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  color: #f0f0f0;
-  font-style: italic;
-  font-size: 2em;
-  line-height: 1.2em; }
 
 .hello-form {
   width: 50%;
@@ -288,23 +264,19 @@ textarea:focus::placeholder {
 
   .main__portfolio .main__portfolio__item {
     width: 100%; }
+    .main__portfolio .main__portfolio__item:hover {
+      width: 100%; }
   .main__portfolio .main__portfolio__item::before,
   .main__portfolio .portfolio__technics__list i {
     display: none; }
   .main__portfolio .main__portfolio__item:nth-of-type(1n+4) {
     display: none; }
 
-  .main__about {
-    flex-direction: column; }
+  .main__contacts__left {
+    margin-top: 30px;
+    margin-bottom: 30px; }
 
-  .main__about__img {
-    width: 80%; }
-
-  .main__about__side {
-    padding-left: 0;
-    width: 100%; }
-
-  .main_about__text {
-    margin-top: 30px; } }
+  .main__contacts__content {
+    flex-direction: column-reverse; } }
 
 /*# sourceMappingURL=main.css.map */

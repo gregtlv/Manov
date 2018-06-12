@@ -44,6 +44,8 @@ input::-webkit-inner-spin-button { -webkit-appearance: none; }
   text-transform: uppercase;
 }
 
+
+
 // #########
 
 // Variables
@@ -130,6 +132,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
 
 
+  .hr-line {
+    // display: none;
+    margin: 30px auto;
+    width: 50px;
+    border: none;
+    background-color: #000;
+    color: #000;
+    height: 1.5px;
+  }
 
 .main__portfolio__title {
   padding: $padding-title;
@@ -254,7 +265,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .main__contacts__right {
     text-align: right;
     flex-basis: 45%;
-
   }
 
     .contacts__img {
@@ -265,14 +275,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     }
 
     .main__contacts__right p {
+      margin-top: 10px;
+      font-size: 1.5em;
       text-align: justify;
-
     }
 
   .main__contacts__left {
     flex-basis: 45%;
     display: flex;
     flex-direction: row;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
     input, textarea {
@@ -311,7 +324,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       margin-bottom: 0px;
       /*height: 3em;*/
       font-size: 1.3em;
-
     }
 
 
@@ -325,52 +337,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .footer {
   padding-top: 1.5em;
   padding-bottom: 50px;
-  .main__about__title {
-    margin: 0;
-    @include title;
-  }
+
   color: $footer-color;
+  text-align: center;
+  
   width: 100%;
   background-color: #7d7d7d;
-}
-
-.main__about {
-  // margin: 0 auto;
-  // margin-left: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding: $padding-title;
-}
-
-.main__about__img {
-  border: 4px solid rgba(0,0,0, 0.1);
-  border-radius: 50%;
-  width: 30%;
-  &:hover {
-    animation: bounce 1s 3;
-  }
-  img {
-    width: 100%;
-    border-radius: 50%;
-  }
-}
-
-.main__about__side {
-  padding-left: 10%;
-  // width: 80%;
-
-}
-
-.main_about__text {
-  padding-top: 0px;
-  font-family: $primary-font;
-  font-weight: 100;
-  color: #f0f0f0;
-  font-style: italic;
-  font-size: 2em;
-  line-height: 1.2em;
 }
 
 //form
@@ -404,6 +376,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
     .main__portfolio__item {
       width: 100%;
+      &:hover {
+        width: 100%;
+      }
     }
     .main__portfolio__item::before,
     .portfolio__technics__list i {
@@ -414,22 +389,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     }
   }
 
-
-
-  .main__about {
-    flex-direction: column;
-  }
-
-  .main__about__img {
-    width: 80%;
-  }
-
-  .main__about__side {
-    padding-left: 0;
-    width: 100%;
-  }
-
-  .main_about__text {
+  .main__contacts__left {
     margin-top: 30px;
+    margin-bottom: 30px;
   }
+
+  .main__contacts__content {
+    flex-direction: column-reverse;
+    }
 }
