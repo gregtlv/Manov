@@ -194,8 +194,30 @@ body, p, a, nav, ul, li {
 .contacts__img {
   width: 100%;
   border-radius: 5px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+
+.contacts__img__div {
+  position: relative;
   margin-bottom: 10px; }
+  .contacts__img__div .img__div__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 15%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); }
+    .contacts__img__div .img__div__icons i {
+      display: block;
+      text-align: center;
+      font-size: 2.8vw;
+      color: #292f3d;
+      opacity: 0.8; }
+      .contacts__img__div .img__div__icons i:hover {
+        opacity: 1;
+        transition: opacity 0.3s; }
 
 .main__contacts__right p {
   margin-top: 10px;
@@ -278,6 +300,10 @@ textarea:focus::placeholder {
     margin-bottom: 30px; }
 
   .main__contacts__content {
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+
+  .img__div__icons {
+    display: none;
+    opacity: 0; } }
 
 /*# sourceMappingURL=main.css.map */

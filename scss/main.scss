@@ -271,7 +271,41 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       width: 100%;
       border-radius: 5px;
       box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    }
+
+    .contacts__img__div {
+      position: relative;
       margin-bottom: 10px;
+
+      .img__div__icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        width: 15%;
+        height: 100%;
+
+        background: rgba(255,255,255, 0.5);
+
+        i {
+          display: block;
+
+          text-align: center;
+          font-size: 2.8vw;
+          color: #292f3d;
+          opacity: 0.8;
+
+          &:hover {
+            opacity: 1;
+            transition: opacity 0.3s;
+
+          }
+        }
+      }
     }
 
     .main__contacts__right p {
@@ -326,6 +360,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       /*height: 3em;*/
       font-size: 1.3em;
     }
+
 
 
 // end of about
@@ -398,4 +433,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .main__contacts__content {
     flex-direction: column-reverse;
     }
+
+// About Image
+
+  .img__div__icons {
+    display: none;
+    opacity: 0;
+  }
+
 }
