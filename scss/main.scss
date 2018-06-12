@@ -5,6 +5,12 @@
 // For my Margaret..
 // Miss her
 
+/* Disable Arrows in Input */
+
+input[type='number'] { -moz-appearance:textfield }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
 // Animate
 
 @import "./animate.css";
@@ -31,7 +37,7 @@
 
 @mixin title {
   padding: 1em;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-family: $primary-font;
   font-weight: 100;
   text-align: center;
@@ -82,7 +88,7 @@ body, p, a, nav, ul, li {
     font-weight: 300;
     padding-bottom: 0px;
     &:hover {
-      animation: tada 1.5s 3;
+      animation: tada 0.3s 1;
     }
   }
 
@@ -113,7 +119,7 @@ body, p, a, nav, ul, li {
   // Banner
   .parallax-banner {
     width: 100%;
-    height: 30%;
+    height: 20%;
     background-color: $secondary-color;
     background-color: #ffffff;
     background-color: #ffffff;
@@ -138,6 +144,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   .main__portfolio__item {
     width: 30%;
+    transition: width 0.3s;
+    &:hover {
+      width: 35%;
+    }
+
     margin-bottom: 3%;
     position: relative;
     z-index: 1;
@@ -147,18 +158,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border-radius: 3px;
 
 
-    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
 
     img {
       width: 100%;
       border-radius: 3px;
-
+      box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
     }
 
     .portfolio__technics__list {
       display: block;
       width: 100%;
-      height: 25%;
+      // height: 25%;
 
       position: absolute;
       z-index: 3;
@@ -169,10 +179,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       text-align: right;
       color: #fdfdfd;
       font-size: 3vw;
-      padding: 5px;
+
+      padding-right: 10px;
+      padding-bottom: 5px;
 
       transition: opacity 0.6s;
       opacity: 0;
+
+      i {
+        display: inline-block;
+      }
     }
   }
 
@@ -215,6 +231,91 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 // End Portfolio
 
+// About
+
+/*Contacts*/
+.main__contacts {
+
+}
+
+.main__contacts h3 {
+  @include title();
+
+}
+
+.main__contacts__content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+  .main__contacts__right {
+    text-align: right;
+    flex-basis: 45%;
+
+  }
+
+    .contacts__img {
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+      margin-bottom: 10px;
+    }
+
+    .main__contacts__right p {
+      text-align: justify;
+
+    }
+
+  .main__contacts__left {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: row;
+  }
+
+    input, textarea {
+      transition: all 0.5s;
+
+    }
+    .form__item {
+      padding-bottom: 25px;
+
+    }
+
+    input:focus::placeholder,
+    textarea:focus::placeholder {
+      background-color: #f8f8f8;
+      height: 100%;
+    }
+
+    .form__item::placeholder {
+      /* font-size: 1.2em; */
+      color: #555555;;
+    }
+    .form__item::-moz-placeholder {
+      /* font-size: 1.2em; */
+      color: #555555;
+    }
+
+    .alertMessage {
+      transition: all 0.5s;
+      opacity: 0;
+    }
+
+
+    .form__button {
+      transition: all 0.5s;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      /*height: 3em;*/
+      font-size: 1.3em;
+
+    }
+
+
+// end of about
 
 // end of main
 

@@ -42,7 +42,7 @@
 
       <div class="header__bottom">
         <h4 class="header__bottom__title">Gregory Manov</h2>
-        <h5 class="header__bottom__description">HTML / CSS / JS / VUE</h4>
+        <h5 class="header__bottom__description">{ HTML / CSS / JS / VUE }</h4>
       </div>
 
     </div> <!-- /Container -->
@@ -98,8 +98,8 @@
             <img src="./img/portfolio/3.jpg" alt="Portfolio">
             <div class="portfolio__technics__list">
               <i class="fab fa-js"></i>
-              <i class="fab fa-html5"></i>
               <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-html5"></i>
             </div>
           </div>
 
@@ -180,37 +180,64 @@
       <!-- Banner Here -->
     </div>
 
-  </main>
-
-
-  <footer class="footer">
-
+    <section id="contacts" class="main__contacts">
     <div class="container">
-      <h5 class="main__about__title">About me</h5>
+    <!-- Contacts Container -->
 
-      <div class="main__about">
-        <div class="main__about__img">
-          <img src="./img/me.jpg" alt="I am Beautiful">
-        </div>
+    <h3>Contacts</h3>
 
-        <div class="main__about__side">
-          <p class="main_about__text">Hi my name is Gregory. <br />
-                                      I'm front-end developer.</p>
-        </div>
-      </div>
+    <!-- <hr width="50px"> -->
 
-      <div class="main__about__bottom">
-        <form action="" class="hello-form" id="form">
-          <input type="text" name="msg" placeholder="Say Hello!">
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">send</i>
-          </button>
 
-        </form>
 
-      </div>
+    <!-- Main Contacts Content -->
+
+    <div class="main__contacts__content">
+
+    <!-- Left Side -->
+    <div class="main__contacts__left">
+
+      <!-- Form -->
+      <form action="index.html" method="post" class="main__contacts__form" id="contactForm">
+        <!-- <div class="form__left"> -->
+
+          <input placeholder="Как Вас Зовут?" type="text" id="inputName" class="form__item">
+          <input placeholder="Телефон" type="number" id="inputPhone" class=" form__item">
+          <input placeholder="E-mail" type="email" id="inputEmail" class="form__item">
+
+        <!-- </div> -->
+
+        <!-- <div class="form__right"> -->
+
+          <textarea placeholder="Текст Сообщения" name="" id="inputText" cols="30" rows="10" class="form__item materialize-textarea"></textarea>
+          <!-- <div> -->
+          <button class="btn-large waves-effect waves-light form__button" id="sendButton">Отправить<i class="material-icons right">send</i></button><br>
+          <span id="alertMessage" class="alertMessage">Заполните обязательные поля</span>
+          <!-- </div> -->
+        <!-- </div> -->
+      </form>
 
     </div>
+    <!-- End of Contacts Left -->
+
+    <!-- Contacts Right -->
+
+    <div class="main__contacts__right">
+
+      <!-- <h4>Григорий Манов</h4> -->
+
+      <img src="./img/me.jpg" alt="" class="contacts__img">
+
+      <p>Hi! My name is Gregory. I'm front-end developer.</p>
+
+
+    </div>
+    <!-- End of Container	 -->
+    </section>
+
+  </main>
+
+  <footer class="footer">
 
   </footer>
 
