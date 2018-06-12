@@ -9,7 +9,7 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 
 	var alertMessage = document.getElementById('alertMessage');
 
-
+    var contactForm = document.getElementById('sectionForm');
 
 	var userName_Class = userName.classList;
 	var userNumber_Class = userNumber.classList;

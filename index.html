@@ -195,21 +195,21 @@
     <div class="main__contacts__content">
 
     <!-- Left Side -->
-    <div class="main__contacts__left">
+    <div class="main__contacts__left" id="sectionForm">
 
       <!-- Form -->
       <form method="post" class="main__contacts__form" id="form">
         <!-- <div class="form__left"> -->
 
-          <input placeholder="Your Name" type="text" id="inputName" class="form__item">
-          <input placeholder="Tel" type="number" id="inputPhone" class=" form__item">
-          <input placeholder="E-mail" type="email" id="inputEmail" class="form__item">
+          <input name="name" placeholder="Your Name" type="text" id="inputName" class="form__item">
+          <input name="phone" placeholder="Tel" type="number" id="inputPhone" class=" form__item">
+          <input name="email" placeholder="E-mail" type="email" id="inputEmail" class="form__item">
 
         <!-- </div> -->
 
         <!-- <div class="form__right"> -->
 
-          <textarea placeholder="Текст Сообщения" name="" id="inputText" cols="30" rows="10" class="form__item materialize-textarea"></textarea>
+          <textarea name="text" placeholder="Текст Сообщения" name="" id="inputText" cols="30" rows="10" class="form__item materialize-textarea"></textarea>
           <!-- <div> -->
           <button class="btn-large waves-effect waves-light form__button" id="sendButton">Get in touch<i class="material-icons right">send</i></button><br>
           <span id="alertMessage" class="alertMessage">Заполните обязательные поля</span>
@@ -252,6 +252,6 @@
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="./js/main.js"></script>
 
-<script src="http://127.0.0.1:35729/livereload.js?ext=Firefox&amp;extver=20.3.0"></script>
+<!--<script src="http://127.0.0.1:35729/livereload.js?ext=Firefox&amp;extver=20.3.0"></script>-->
 </body>
 </html>
