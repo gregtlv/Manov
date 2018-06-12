@@ -277,6 +277,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     .main__contacts__right p {
       margin-top: 10px;
       font-size: 1.5em;
+      line-height: 25px;
       text-align: justify;
     }
 
@@ -340,7 +341,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   color: $footer-color;
   text-align: center;
-  
+
   width: 100%;
   background-color: #7d7d7d;
 }

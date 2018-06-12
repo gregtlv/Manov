@@ -200,6 +200,7 @@ body, p, a, nav, ul, li {
 .main__contacts__right p {
   margin-top: 10px;
   font-size: 1.5em;
+  line-height: 25px;
   text-align: justify; }
 
 .main__contacts__left {
