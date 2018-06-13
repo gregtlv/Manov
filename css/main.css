@@ -1,5 +1,6 @@
 /* Disable Arrows in Input */
 @import url(./animate.css);
+@import url(./portfolio.css);
 input[type='number'] {
   -moz-appearance: textfield; }
 
@@ -111,6 +112,16 @@ body, p, a, nav, ul, li {
   color: #000;
   height: 1.5px; }
 
+.portfolio-container {
+  position: relative; }
+  .portfolio-container .back-button {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-size: 2vw;
+    transition: all 0.3s;
+    opacity: 0; }
+
 .main__portfolio__title {
   padding: 2em 0 2em 0; }
 
@@ -119,7 +130,8 @@ body, p, a, nav, ul, li {
   opacity: 1;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  transition: all 0.3s; }
   .main__portfolio .main__portfolio__item {
     width: 30%;
     transition: width 0.3s;

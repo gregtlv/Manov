@@ -1,3 +1,45 @@
+
+function HideOrShow (PortfolioValue, ButtonValue) {
+
+
+	var PortfolioValue, ButtonValue;
+
+	console.log("HideOrShow " + PortfolioValue + ButtonValue);
+
+	var Portfolio = document.getElementById('mainPortfolio');
+	var backButton = document.getElementById('backButton');
+
+
+	Portfolio.style.opacity = PortfolioValue;
+	backButton.style.opacity = ButtonValue;
+}
+
+	// Back Button 
+	backButton.onclick = function clickBack(event) {
+
+		event.preventDefault();
+
+		HideOrShow(1, 0);
+
+	}
+
+	// #########
+	// ##Works##
+	// #########
+
+	// Work 1
+	// Yes I know this is stupid method 
+	work_1.onclick = function showWork(event) { //event важная вещь для Firefox
+
+	event.preventDefault();
+
+	HideOrShow(0, 1);
+
+}
+
+
+
+// Contact Form
 sendButton.onclick = function sendForm(event) { //event важная вещь для Firefox
 
 	event.preventDefault();
@@ -9,7 +51,7 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 
 	var alertMessage = document.getElementById('alertMessage');
 
-    var contactForm = document.getElementById('sectionForm');
+  var contactForm = document.getElementById('sectionForm');
 
 	var userName_Class = userName.classList;
 	var userNumber_Class = userNumber.classList;
