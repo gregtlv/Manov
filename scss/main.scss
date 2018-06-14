@@ -463,6 +463,14 @@ body, p, a, nav, ul, li {
     opacity: 0;
   }
 
+.back-button {
+  i {
+    font-size: 17px;
+  }
+}
+  .button-up {
+    font-size: 19px;
+  }
 // Works
 .side__images {
     flex-wrap: wrap;
