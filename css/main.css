@@ -117,14 +117,16 @@ body, p, a, nav, ul, li {
   transition: all 0.3s; }
   .portfolio-container .back-button {
     position: absolute;
-    right: 0;
-    top: 30px;
-    font-size: 2vw;
+    right: -15;
+    top: 15;
     transition: all 0.3s;
-    opacity: 0; }
+    opacity: 0;
+    padding: 15px; }
     .portfolio-container .back-button:hover {
       transform: rotate(-360deg);
       transition: all 1s; }
+  .portfolio-container .back_button {
+    font-size: 2vw; }
 
 .main__portfolio__title {
   padding: 2em 0 2em 0;
@@ -324,14 +326,16 @@ textarea:focus::placeholder {
     display: none;
     opacity: 0; }
 
-  .back-button i {
-    font-size: 17px; }
-
   .button-up {
-    font-size: 19px; }
+    font-size: 35px; }
+
+  .portfolio-container .back_button {
+    font-size: 23px; }
 
   .side__images {
     flex-wrap: wrap; }
+    .side__images .side__images_span {
+      width: 100%; }
     .side__images img {
       width: 100%;
       margin-bottom: 15px; } }

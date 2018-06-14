@@ -96,7 +96,6 @@ body, p, a, nav, ul, li {
 }
 
 // Navigation
-
   .header__nav {
     position: absolute;
     left: 0;
@@ -142,19 +141,22 @@ body, p, a, nav, ul, li {
 
   .back-button {
     position: absolute;
-    right: 0;
-    top: 30px;
-
-    font-size: 2vw;
+    right: -15;
+    top: 15;
 
     transition: all 0.3s;
     opacity: 0;
+
+    padding: 15px;
 
     &:hover {
       transform: rotate(-360deg);
       transition: all 1s;
     }
 
+  }
+  .back_button {
+    font-size: 2vw;
   }
 }
 
@@ -189,8 +191,6 @@ body, p, a, nav, ul, li {
     display: flex;
     // flex-direction: row-reverse;
     border-radius: 3px;
-
-
 
     img {
       width: 100%;
@@ -463,17 +463,18 @@ body, p, a, nav, ul, li {
     opacity: 0;
   }
 
-.back-button {
-  i {
-    font-size: 17px;
-  }
-}
   .button-up {
-    font-size: 19px;
+    font-size: 35px;
+  }
+  .portfolio-container .back_button {
+    font-size: 23px;
   }
 // Works
 .side__images {
     flex-wrap: wrap;
+    .side__images_span {
+      width: 100%;
+    }
     img {
       width: 100%;
       margin-bottom: 15px;

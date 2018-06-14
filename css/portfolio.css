@@ -6,9 +6,10 @@
   width: 100%;
   justify-content: space-between;
   flex-direction: row; }
+  .side__images .side__images_span {
+    width: 49%; }
   .side__images img {
-    width: 49%;
-    height: 49%; }
+    width: 100%; }
 
 .project__techincs {
   display: block;
@@ -40,10 +41,11 @@
 
 .button-up {
   position: absolute;
-  bottom: 20;
-  right: 0;
+  bottom: 5;
+  right: -15;
   font-size: 2.3vw;
-  color: #039be5; }
+  color: #039be5;
+  padding: 15px; }
   .button-up:hover {
     transition: all 0.3s;
     bottom: 27px; }
