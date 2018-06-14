@@ -8,15 +8,15 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none; }
 
+body, p, a, nav, ul, li {
+  color: #0d0e09; }
+
 @font-face {
   src: url(https://fonts.googleapis.com/css?family=Roboto);
   font-family: "Roboto", sans-serif; }
 @font-face {
   src: url(./fa-brands-400.woff);
   font-family: "fa-brands-400"; }
-body, p, a, nav, ul, li {
-  color: #0d0e09; }
-
 .main__portfolio__title,
 .header__top__title,
 .header__bottom__title,
@@ -113,7 +113,8 @@ body, p, a, nav, ul, li {
   height: 1.5px; }
 
 .portfolio-container {
-  position: relative; }
+  position: relative;
+  transition: all 0.3s; }
   .portfolio-container .back-button {
     position: absolute;
     right: 0;
@@ -121,12 +122,17 @@ body, p, a, nav, ul, li {
     font-size: 2vw;
     transition: all 0.3s;
     opacity: 0; }
+    .portfolio-container .back-button:hover {
+      transform: rotate(-360deg);
+      transition: all 1s; }
 
 .main__portfolio__title {
-  padding: 2em 0 2em 0; }
+  padding: 2em 0 2em 0;
+  transition: all 0.3s; }
 
 .main__portfolio {
   display: flex;
+  position: static;
   opacity: 1;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -134,7 +140,7 @@ body, p, a, nav, ul, li {
   transition: all 0.3s; }
   .main__portfolio .main__portfolio__item {
     width: 30%;
-    transition: width 0.3s;
+    transition: all 0.3s;
     margin-bottom: 3%;
     position: relative;
     z-index: 1;
@@ -316,6 +322,12 @@ textarea:focus::placeholder {
 
   .img__div__icons {
     display: none;
-    opacity: 0; } }
+    opacity: 0; }
+
+  .side__images {
+    flex-wrap: wrap; }
+    .side__images img {
+      width: 100%;
+      margin-bottom: 15px; } }
 
 /*# sourceMappingURL=main.css.map */

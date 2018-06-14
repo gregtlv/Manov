@@ -57,10 +57,11 @@
       <!-- Banner Here -->
     </div>
 
-    <div class="portfolio-container container">
+    <div id="portfolioCont" class="portfolio-container container">
 
       <!-- PORTFOLIO -->
-      <h4 class="main__portfolio__title">Portfolio</h4>
+      <h4 id="portfolioTitle" class="main__portfolio__title">Portfolio</h4>
+
       <a id="backButton" class="back-button" href="#">
         <i class="fas fa-undo"></i>
       </a>
@@ -176,6 +177,44 @@
 
       </section>
 
+      <section id="worksPage" class="works_page">
+
+        <p id="projectDescriptionTop" class="project__description project__description-short"></p>
+
+        <div id="sideImages" class="side__images">
+
+          <img id="workImg_1" src="./img/8.jpg" alt="Project1" class="src" height="332px">
+          <img id="workImg_2" src="./img/9.jpg" alt="Project1" class="src" height="332px">
+
+
+        </div>
+
+        <div id="sideAbout" class="side__about">
+          <ul class="project__techincs">
+            <li #="projectTechs">
+              <h5>Технологии</h5>
+              <p id="projectTechnics"></p>
+            </li>
+            <li class="project__techincs__center">
+              <h5>Приложения</h5>
+              <p id="projectApps"></p>
+            </li>
+            <li>
+              <h5>Вёрстка</h5>
+              <p id="projectLayout"></p>
+            </li>
+          </ul>
+
+          <div id="projectDescriptionBottom" class="project__description-long">
+            <p class="project__description">О Проекте</p><br />
+            <p id="projectDescriptionBottomContent" class="project__description"></p>
+          </div>
+        </div>
+        <a href="#portfolioTitle">
+          <i id="buttonUp" class="button-up fas fa-arrow-up"></i>
+        </a>
+      </section>
+
     </div>
 
     <div class="parallax-banner">
@@ -244,7 +283,7 @@
 
 
     </div>
-    <!-- End of Container	 -->
+    <!-- End of Container  -->
     </section>
 
   </main>

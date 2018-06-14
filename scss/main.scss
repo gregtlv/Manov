@@ -14,11 +14,11 @@ input::-webkit-inner-spin-button { -webkit-appearance: none; }
 // Animate
 
 @import "./animate.css";
+@import "./vars";
 
-// Portfolio
-@import "./portfolio.css";
-
-
+body, p, a, nav, ul, li {
+  color: $primary-color;
+}
 
 // @import "./fontawesome-all.css";
 
@@ -54,19 +54,8 @@ input::-webkit-inner-spin-button { -webkit-appearance: none; }
 
 // #########
 
-// Variables
-
-$primary-color: #0d0e09;
-$secondary-color: #1e0d1c;
-$footer-color: #fdfdfd;
-$padding-title: 2em 0 2em 0;
-
-$primary-font: "Roboto", sans-serif;
-// $secondary-font:
-
-body, p, a, nav, ul, li {
-  color: $primary-color;
-}
+// Portfolio
+@import "./portfolio.css";
 
 .main__portfolio__title,
 .header__top__title,
@@ -149,6 +138,7 @@ body, p, a, nav, ul, li {
 
 .portfolio-container  {
   position: relative;
+  transition: all 0.3s;
 
   .back-button {
     position: absolute;
@@ -160,15 +150,23 @@ body, p, a, nav, ul, li {
     transition: all 0.3s;
     opacity: 0;
 
+    &:hover {
+      transform: rotate(-360deg);
+      transition: all 1s;
+    }
+
   }
 }
 
 .main__portfolio__title {
   padding: $padding-title;
+  transition: all 0.3s;
 }
 
 .main__portfolio {
   display: flex; // flex
+  position: static;
+
   opacity: 1;
 
   justify-content: space-between;
@@ -179,7 +177,7 @@ body, p, a, nav, ul, li {
 
   .main__portfolio__item {
     width: 30%;
-    transition: width 0.3s;
+    transition: all 0.3s;
     &:hover {
       width: 35%;
     }
@@ -465,4 +463,12 @@ body, p, a, nav, ul, li {
     opacity: 0;
   }
 
+// Works
+.side__images {
+    flex-wrap: wrap;
+    img {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
 }

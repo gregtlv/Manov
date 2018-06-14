@@ -1,3 +1,51 @@
+#worksPage {
+  display: none; }
 
+.side__images {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row; }
+  .side__images img {
+    width: 49%;
+    height: 49%; }
+
+.project__techincs {
+  display: block;
+  margin: 7% 0;
+  text-align: center; }
+  .project__techincs li {
+    display: inline-block; }
+    .project__techincs li h5 {
+      color: #4E4E4E;
+      font-weight: 100; }
+    .project__techincs li p {
+      color: #777; }
+  .project__techincs .project__techincs__center {
+    padding: 0 5%; }
+
+.project__description {
+  line-height: 22px;
+  font-weight: 100;
+  color: #777; }
+
+.project__description-short {
+  display: block;
+  text-align: center;
+  margin-top: -2em;
+  margin-bottom: 1em; }
+
+.project__description-long {
+  padding-bottom: 45px; }
+
+.button-up {
+  position: absolute;
+  bottom: 20;
+  right: 0;
+  font-size: 2.3vw;
+  color: #039be5; }
+  .button-up:hover {
+    transition: all 0.3s;
+    bottom: 27px; }
 
 /*# sourceMappingURL=portfolio.css.map */
