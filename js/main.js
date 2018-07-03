@@ -64,12 +64,12 @@ function editWorksPage ( titleDescr, projectTechnics, projectApps, projectLayout
 
 	var titleDescr, projectTechnics, projectApps, projectLayout, imgNum, imgNum_2, projectDescriptionBottomContent;
 	titleDescr = "Сайт для семейной пары фотографов";
-	imgNum = "8";
-	imgNum_2 = "9";
+	imgNum = "dndnko/1";
+	imgNum_2 = "dndnko/2";
 	projectTechnics = "jQuery, Jacascript";
 	projectApps = "Adobe Illustrator, Adobe Photoshop";
 	projectLayout = "Sass, CSS";
-	projectDescriptionBottomContent = "123";
+	projectDescriptionBottomContent = "Задача стояла в разработке landing page. В процессе разработки были задействованы: HTML5, CSS3, галерея была выполнена с применеиемм jQuery.";
 
 	HideOrShow(0, 1, "none"); // hide
 
@@ -85,12 +85,12 @@ function editWorksPage ( titleDescr, projectTechnics, projectApps, projectLayout
 
 	var titleDescr, projectTechnics, projectApps, projectLayout, imgNum, imgNum_2, projectDescriptionBottomContent;
 	titleDescr = "Разработка сайта для Израильской туристической фирмы";
-	imgNum = "10";
-	imgNum_2 = "11";
+	imgNum = "atlantis/1";
+	imgNum_2 = "atlantis/2";
 	projectTechnics = "WordPress, jQuery, Jacascript";
 	projectApps = "Adobe Illustrator, Adobe Photoshop, Atom";
-	projectLayout = "Sass, CSS";
-	projectDescriptionBottomContent = "Для реализации первого этапа был выбран Reacr.JS, Yeoman и SASS фреймворк. Использование Gulp и дополнительных плагинов значительно сократило время на разработку и позволило получить статичные страницы на выходе, готовые к быстрому дальнейшему внедрению.В качестве второго этапа разработанную верстку нужно было добавить на CMS-платформу. Учитывая оптимальную разработку на первом шаге, процесс не занял много времени. В качестве результата заказчик быстро получил конечный продукт и смог использовать его в своём бизнесе.";
+	projectLayout = "HTML, Sass, CSS";
+	projectDescriptionBottomContent = "Для реализации первого этапа были выбраны стандарнтые инструменты, такие как HTML, JS и SASS фреймворк. Использование Gulp и дополнительных плагинов значительно сократило время на разработку и позволило получить статичные страницы на выходе, готовые к быстрому дальнейшему внедрению. В качестве второго этапа, разработанную верстку нужно было добавить на <strong>WordPress</strong>. Учитывая оптимальную разработку на первом шаге, процесс не занял много времени. В качестве результата заказчик быстро получил конечный продукт и смог использовать его в своём бизнесе.";
 
 	HideOrShow(0, 1, "none"); // hide
 
@@ -107,12 +107,12 @@ function editWorksPage ( titleDescr, projectTechnics, projectApps, projectLayout
 
 	var titleDescr, projectTechnics, projectApps, projectLayout, imgNum, imgNum_2, projectDescriptionBottomContent;
 	titleDescr = "Разработка Landing Page для молодого московского бренда по продаже ";
-	imgNum = "12";
-	imgNum_2 = "13";
+	imgNum = "chr/1";
+	imgNum_2 = "chr/2";
 	projectTechnics = "jQuery, Jacascript";
 	projectApps = "Adobe Illustrator, Adobe Photoshop";
 	projectLayout = "Sass, CSS";
-	projectDescriptionBottomContent = "123";
+	projectDescriptionBottomContent = "В процессе разработки были задействованы следующие технологии: HTML5, CSS3, jQuery, media queries, Бем-методология. Также была проведена оптимизация сайта под поисковые машины. Особое внимание при разработке сайта уделялось мобильным устройствам.";
 
 	HideOrShow(0, 1, "none"); // hide
 
